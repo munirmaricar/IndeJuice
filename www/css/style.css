@@ -1,0 +1,85 @@
+body {
+    background-color: #fff7e6;
+    margin-bottom: 7rem;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #ffbb36;
+    margin-top: 0;
+    position: sticky;
+    height: 5rem;
+}
+
+span {
+    color: white;
+}
+
+#navbarHeading {
+    padding-left: 1rem;
+    text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
+    font-family: "Gotham-Medium";
+    font-size: larger;
+}
+
+#slogan {
+    text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
+    font-family: "Gotham-Thin";
+    font-size: larger;
+    text-align: right;
+}
+
+h2 {
+    width: 75rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.05em;
+    font-family: "Gotham-Thin";
+    font-size: large;
+    margin: 7rem 10rem 3rem 10rem;
+}
+
+h2 span {
+    color: black;
+    font-weight: bolder;
+    background: #fff7e6;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card {
+    padding: 20px;
+    max-width: 80rem;
+    box-shadow: 9px 7px 2px #e6e0d3;
+    margin-top: 2rem;
+}
+
+#fruitImages {
+    margin-left: 1rem;
+    height: 10rem;
+    width: auto;
+}
+
+
+#fruitName {
+    font-weight: bold;
+}
+
+.card-body {
+    margin-left: 3rem;
+}
+
+.card-title {
+    font-family: "Gotham-Thin";
+    font-weight: bolder;
+}
+
+.card-text {
+    max-width: 50rem;
+    text-align: justify;
+    font-family: "Gotham-Thin";
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
