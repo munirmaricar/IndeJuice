@@ -48,6 +48,7 @@ h2 span {
     padding-right: 2rem;
 }
 
+
 .card {
     padding: 20px;
     max-width: 80rem;
@@ -71,15 +72,52 @@ h2 span {
 }
 
 .card-title {
-    font-family: "Gotham-Thin";
-    font-weight: bolder;
+    font-family: "Gotham-Book";
 }
 
 .card-text {
     max-width: 50rem;
     text-align: justify;
-    font-family: "Gotham-Thin";
-    font-weight: bolder;
+    font-family: "Gotham-Light";
     margin-top: 1.5rem;
     margin-left: 1.5rem;
+}
+
+.priceTag {
+    float: right;
+    margin-left: 18rem;
+    right: 13%;
+    bottom: 5%;
+}
+
+.green-rectangle {
+    height: 45px;
+    background-color: #8ccc4e;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+}
+
+.green-rectangle p {
+    color: white;
+    text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
+    font-family: "Gotham-Book";
+    position: relative;
+}
+
+.green-rectangle:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 45px solid #8ccc4e;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
