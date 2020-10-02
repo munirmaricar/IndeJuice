@@ -19,9 +19,10 @@
         <span id="navbarHeading" class="navbar-brand mb-0 h1">IndeFruit</span>
         <span id="slogan" class="navbar-brand mb-0 h1">Only The Best For Summer</span>
     </nav>
-
+    <center><img style="height: 6rem; width: 6rem;" src="img/logo.png" class="card-img" alt="..."></center>
     <h2><span>TOP FRUITS</span></h2>
-    <div class="oneCard mx-auto">
+
+    <div class="center">
         <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayMangoesInformation()">
             <div class="card mx-auto">
                 <div class="row no-gutters">
@@ -39,7 +40,8 @@
                             </h5>
                             <p class="card-text">A mango is a juicy stone fruit (drupe) produced from numerous species
                                 of
-                                tropical trees belonging to the flowering plant genus Mangifera, cultivated mostly for
+                                tropical trees<br>
+                                belonging to the flowering plant genus Mangifera, cultivated mostly for
                                 their
                                 edible fruit.</p>
                         </div>
@@ -47,50 +49,63 @@
                 </div>
             </div>
         </a>
+
+        <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayStrawberriesInformation()">
+            <div class="card mx-auto">
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <img id="fruitImages" src="img/strawberries.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Strawberries</b> from Spain
+                                <div class="priceTag">
+                                    <div class="green-rectangle">
+                                        <p><b>£0.20</b> each</p>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-text">This fruit is widely appreciated for its characteristic aroma, bright
+                                red
+                                color, juicy texture,<br> and sweetness. It is consumed in large quantities and popular
+                                in
+                                jam,
+                                juice, pies & ice cream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayGuavasInformation()">
+            <div class="card mx-auto">
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <img id="fruitImages" src="img/guavas.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Guavas</b> from Guatemala
+                                <div class="priceTag">
+                                    <div class="green-rectangle">
+                                        <p><b>£0.40</b> each</p>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-text">Guavas are a common tropical fruit cultivated in many tropical and
+                                subtropical
+                                regions,<br> originating from an area thought to extend from Mexico or Central America.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
 
-    <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayStrawberriesInformation()">
-        <div class="card mx-auto">
-            <div class="row no-gutters">
-                <div class="col-md-2">
-                    <img id="fruitImages" style="margin-left: 2.5rem;" src="img/strawberries.png" class="card-img"
-                        alt="...">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Strawberries</b> from Spain
-                        </h5>
-                        <p class="card-text">This fruit is widely appreciated for its characteristic aroma, bright red
-                            color, juicy texture, and sweetness. It is consumed in large quantities and popular in jam,
-                            juice, pies & ice cream.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-
-    <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayGuavasInformation()">
-        <div class="card mx-auto">
-            <div class="row no-gutters">
-                <div class="col-md-2">
-                    <img id="fruitImages" style="margin-left: 2.5rem;" src="img/guavas.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Guavas</b> from Guatemala
-                        </h5>
-                        <p class="card-text">Guavas are a common tropical fruit cultivated in many tropical and
-                            subtropical
-                            regions, originating from an area thought to extend from Mexico or Central America.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered mx-auto">
-            <div class="modal-content" style="background-color: whitesmoke; max-width: 320px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: whitesmoke; max-width: 320px; margin: 0 auto;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                     </h5>
