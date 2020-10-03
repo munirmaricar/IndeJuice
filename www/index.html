@@ -1,8 +1,11 @@
 <html>
 
 <head>
+    <!-- Webpage Title -->
     <title>IndeFruit</title>
     <link rel="shortcut icon" href="img/title.png" />
+
+    <!-- Linking bootstrap, fontawesome and local css/js scripts -->
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,96 +16,133 @@
 </head>
 
 <body>
-
-    <!-- As a heading -->
-    <nav class="navbar top">
-        <span id="navbarHeading" class="navbar-brand mb-0 h1">IndeFruit</span>
-        <span id="slogan" class="navbar-brand mb-0 h1">Only The Best For Summer</span>
+    <!-- Webpage Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffbb36; height:20px;">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" style="margin-top: 45px;">
+                    <span id="navbarHeading">IndeFruit</span>
+                </li>
+            </ul>
+            <span id="slogan" style="margin-right: 20px; margin-top: 45px;">Only The Best For Summer</span>
+        </div>
     </nav>
-    <center><img style="height: 6rem; width: 6rem;" src="img/logo.png" class="card-img" alt="..."></center>
-    <h2><span>TOP FRUITS</span></h2>
-
-    <div class="center">
-        <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayMangoesInformation()">
-            <div class="card mx-auto">
-                <div class="row no-gutters">
-                    <div class="col-md-2">
-                        <img id="fruitImages" src="img/mangoes.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Mangoes</b> from India
-                                <div class="priceTag">
-                                    <div class="green-rectangle">
-                                        <p><b>£0.50</b> each</p>
-                                    </div>
-                                </div>
-                            </h5>
-                            <p class="card-text">A mango is a juicy stone fruit (drupe) produced from numerous species
-                                of
-                                tropical trees<br>
-                                belonging to the flowering plant genus Mangifera, cultivated mostly for
-                                their
-                                edible fruit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayStrawberriesInformation()">
-            <div class="card mx-auto">
-                <div class="row no-gutters">
-                    <div class="col-md-2">
-                        <img id="fruitImages" src="img/strawberries.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Strawberries</b> from Spain
-                                <div class="priceTag">
-                                    <div class="green-rectangle">
-                                        <p><b>£0.20</b> each</p>
-                                    </div>
-                                </div>
-                            </h5>
-                            <p class="card-text">This fruit is widely appreciated for its characteristic aroma, bright
-                                red
-                                color, juicy texture,<br> and sweetness. It is consumed in large quantities and popular
-                                in
-                                jam,
-                                juice, pies & ice cream.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a type="button" data-toggle="modal" data-target="#exampleModal" onclick="displayGuavasInformation()">
-            <div class="card mx-auto">
-                <div class="row no-gutters">
-                    <div class="col-md-2">
-                        <img id="fruitImages" src="img/guavas.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Guavas</b> from Guatemala
-                                <div class="priceTag">
-                                    <div class="green-rectangle">
-                                        <p><b>£0.40</b> each</p>
-                                    </div>
-                                </div>
-                            </h5>
-                            <p class="card-text">Guavas are a common tropical fruit cultivated in many tropical and
-                                subtropical
-                                regions,<br> originating from an area thought to extend from Mexico or Central America.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
+    <div class="row" style="background-color: #ffbb36; height: 50px;">
+        <div class="col-md-12">
+            <center><img style="height: 6rem; width: 6rem;" src="img/logo.png" class="card-img" alt="..."></center>
+        </div>
+    </div>
     </div>
 
+    <!-- Webpage Heading -->
+    <div class="row">
+        <div class="col-md-12" style="background:transparent; margin-top: 11vh;">
+            <center>
+                <h2 style="padding-left: 10px; padding-right: 10px;">
+                    TOP FRUITS
+                </h2>
+            </center>
+        </div>
+    </div>
+
+    <!-- Card for Mangoes Product -->
+    <a type=button data-toggle="modal" data-target="#exampleModal" onclick="displayMangoesInformation()">
+        <div class="row"
+            style="background-color: #ffffff; margin: 5vh 10vw; border-radius: 5px; box-shadow: 9px 7px 2px #e6e0d3;">
+            <div class="col-md-2" style="margin:5vh 0;">
+                <center><img style="height: 8rem; width: 8rem;" src="img/mangoes.png" class="card-img" alt="...">
+                </center>
+            </div>
+            <div class="col-md-10" style="margin-top: 3vh; padding-right:0;">
+                <div class="row">
+                    <div class="col-md-9 titleFruit">
+                        <h1 id="cardHeading"><b>Mangoes</b> from India
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="green-rectangle">
+                            <p><b>£0.50</b> each</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0 0vh 2vh 2vh;">
+                    <h5 class="card-text">A mango is a juicy stone fruit (drupe) produced from numerous species of
+                        tropical
+                        trees belonging to the flowering plant genus Mangifera, cultivated mostly for their edible
+                        fruit.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card for Strawberries Product -->
+    <a type=button data-toggle="modal" data-target="#exampleModal" onclick="displayStrawberriesInformation()">
+        <div class="row"
+            style="background-color: #ffffff; margin: 5vh 10vw; border-radius: 5px; box-shadow: 9px 7px 2px #e6e0d3;">
+            <div class="col-md-2" style="margin:5vh 0;">
+                <center><img style="height: 8rem; width: 8rem;" src="img/strawberries.png" class="card-img" alt="...">
+                </center>
+            </div>
+            <div class="col-md-10" style="margin-top: 3vh; padding-right:0;">
+                <div class="row">
+                    <div class="col-md-9 titleFruit">
+                        <h1 id="cardHeading" style="margin-left: 1vh; font-family: Gotham-Book;"><b>Strawberries</b>
+                            from
+                            Spain
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="green-rectangle">
+                            <p><b>£0.20</b> each</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0 0vh 2vh 2vh;">
+                    <h5 class="card-text">This fruit is widely appreciated for its characteristic aroma, bright
+                        red
+                        color, juicy texture, and sweetness. It is consumed in large quantities and popular
+                        in
+                        jam,
+                        juice, pies & ice cream.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card for Guavas Product -->
+    <a type=button data-toggle="modal" data-target="#exampleModal" onclick="displayGuavasInformation()">
+        <div class="row"
+            style="background-color: #ffffff; margin: 5vh 10vw; border-radius: 5px; box-shadow: 9px 7px 2px #e6e0d3;">
+            <div class="col-md-2" style="margin:5vh 0;">
+                <center><img style="height: 8rem; width: 8rem;" src="img/guavas.png" class="card-img" alt="...">
+                </center>
+            </div>
+            <div class="col-md-10" style="margin-top: 3vh; padding-right:0;">
+                <div class="row">
+                    <div class="col-md-9 titleFruit">
+                        <h1 id="cardHeading" style="margin-left: 1vh; font-family: Gotham-Book;"><b>Guavas</b> from
+                            Guatemala
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="green-rectangle">
+                            <p><b>£0.40</b> each</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0 0vh 2vh 2vh;">
+                    <h5 class="card-text">Guavas are a common tropical fruit cultivated in many tropical and
+                        subtropical
+                        regions, originating from an area thought to extend from Mexico or Central America.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Webpage Modal Layout filled in using local js file -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="background-color: whitesmoke; max-width: 320px; margin: 0 auto;">
@@ -124,6 +164,7 @@
         </div>
     </div>
 
+    <!-- Additional linking of bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

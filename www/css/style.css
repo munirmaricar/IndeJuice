@@ -1,9 +1,12 @@
+/* Webpage Body */
 body {
     background-color: #fff7e6;
     margin-bottom: 7rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+/* Webpage Navigation Bar */
 .navbar {
     background-color: #ffbb36;
     margin-top: 0;
@@ -17,93 +20,86 @@ span {
 
 #navbarHeading {
     padding-left: 1rem;
-    text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
+    text-shadow: 3px 3.5px 1px #df9c16;
     font-family: "Gotham-Medium";
-    font-size: larger;
+    font-size: 25px;
 }
 
 #slogan {
     text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
     font-family: "Gotham-Thin";
-    font-size: larger;
+    font-size: 20px;
     text-align: right;
+    float: right;
 }
 
+/* Webpage Heading */
 h2 {
-    width: 75rem;
+    overflow: hidden;
     text-align: center;
-    border-bottom: 1px solid #000;
-    line-height: 0.05em;
-    font-family: "Gotham-Thin";
-    font-size: large;
-    margin: 3.5rem 10rem 0.5rem 10rem;
-}
-
-h2 span {
-    color: black;
-    font-weight: bolder;
-    background: #fff7e6;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-
-.card {
-    max-width: 80rem;
-    box-shadow: 9px 7px 2px #e6e0d3;
-    margin-top: 2rem;
-}
-
-#fruitImages {
-    margin-left: 2.5rem;
-    padding: 25px;
-    height: 10rem;
-    width: 10 rem;
-}
-
-
-#fruitName {
-    font-weight: bold;
-}
-
-.card-body {
-    padding-right: 0px !important;
-    margin-left: 3rem;
-}
-
-.card-title {
     font-family: "Gotham-Book";
+    font-size: 25px;
+    color: #54524C;
+}
+
+h2:before,
+h2:after {
+    background-color: #F1E9DA;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 28%;
+}
+
+h2:before {
+    right: 0.75em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.75em;
+    margin-right: -50%;
+}
+
+
+/* Cards */
+h1 {
+    font-family: "Gotham-Thin";
+    font-size: 1.5rem;
+}
+
+#cardHeading {
+    margin-left: 1vh;
+    font-family: Gotham-Book;
 }
 
 .card-text {
-    max-width: 50rem;
-    text-align: justify;
+    max-width: 70rem;
     font-family: "Gotham-Light";
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    margin: 1.5rem 1.5rem;
 }
 
-.priceTag {
-    float: right;
-    margin-left: 10rem;
-    right: 13%;
-    bottom: 5%;
-}
 
+/* Pricetag for Cards */
 .green-rectangle {
     height: 40px;
     background-color: #8ccc4e;
-    padding: 10px 30px 10px 30px;
+    padding: 1vh 1vw 0vh 1vw;
     position: relative;
+    right: -0.3vw;
 }
 
 .green-rectangle p {
     color: white;
     text-shadow: 2px 2.5px 1px rgba(141, 141, 141, 0.829);
     font-family: "Gotham-Book";
-    font-size: 1rem;
+    font-size: 18px;
     position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 .green-rectangle:before {
@@ -117,9 +113,59 @@ h2 span {
     right: 100%;
 }
 
+/* Centers images in modals */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 50%;
+}
+
+/* Making Code Responsive for Mobile Devices */
+@media (max-width: 767px) {
+    #modalBody {
+        text-align: center;
+    }
+
+    #cardHeading,
+    .col-md-9 #cardHeading {
+        text-align: center;
+        padding: 0;
+    }
+
+    #cardImages {
+        height: 20rem !important;
+        width: 20rem;
+    }
+
+    .card-text {
+        margin: 0 auto !important;
+        padding: 0 auto !important;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/* Making Code Responsive for Tablets */
+@media (min-width:768px) and (max-width: 1023px) {
+    .green-rectangle p {
+        font-size: 13px;
+        padding: 2px 0 0 0;
+        width: 100%;
+    }
+}
+
+
+/* Making Code Responsive for iPad Pro */
+@media (min-width:1024px) and (max-width: 1400px) {
+    .green-rectangle p {
+        padding: 0 0 0 2px;
+        margin-bottom: 2px;
+        width: 100%;
+    }
+
+    .green-rectangle {
+        padding-top: 0.5vh;
+    }
 }
